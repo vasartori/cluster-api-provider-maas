@@ -129,7 +129,7 @@ func (s *Service) DeployMachine(userDataB64 string) (_ *infrav1beta1.Machine, re
 	s.scope.Info("Swap disabled", "system-id", m.SystemID())
 
 	if mm.Spec.DeployInMemory {
-		s.scope.Info("Machine will be deployed at memory", "system-id", m.SystemID())
+		s.scope.Info("Machine will be deployed in memory", "system-id", m.SystemID())
 	}
 
 	deployingM, err := m.Deployer().

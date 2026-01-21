@@ -92,6 +92,6 @@ type Machine struct {
 	// Addresses contains the MAAS Machine associated addresses.
 	Addresses []clusterv1.MachineAddress
 
-	// True if machine is deployed at memory
+	// True if machine is deployed in memory
 	DeployedAtMemory bool
 }
