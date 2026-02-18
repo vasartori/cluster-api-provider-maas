@@ -93,5 +93,5 @@ type Machine struct {
 	Addresses []clusterv1.MachineAddress
 
 	// True if machine is deployed in memory
-	DeployedAtMemory bool
+	DeployedInMemory bool
 }

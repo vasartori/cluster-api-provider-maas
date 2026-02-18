@@ -150,7 +150,7 @@ func fromSDKTypeToMachine(m maasclient.Machine) *infrav1beta1.Machine {
 		Hostname:         m.Hostname(),
 		State:            infrav1beta1.MachineState(m.State()),
 		Powered:          m.PowerState() == "on",
-		DeployedAtMemory: m.DeployedAtMemory(),
+		DeployedInMemory: m.DeployedInMemory(),
 		AvailabilityZone: m.Zone().Name(),
 	}
 

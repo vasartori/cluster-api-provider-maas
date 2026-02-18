@@ -378,18 +378,18 @@ func (mr *MockMachineMockRecorder) Delete(arg0 interface{}) *gomock.Call {
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Delete", reflect.TypeOf((*MockMachine)(nil).Delete), arg0)
 }
 
-// DeployedAtMemory mocks base method.
-func (m *MockMachine) DeployedAtMemory() bool {
+// DeployedInMemory mocks base method.
+func (m *MockMachine) DeployedInMemory() bool {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "DeployedAtMemory")
+	ret := m.ctrl.Call(m, "DeployedInMemory")
 	ret0, _ := ret[0].(bool)
 	return ret0
 }
 
-// DeployedAtMemory indicates an expected call of DeployedAtMemory.
-func (mr *MockMachineMockRecorder) DeployedAtMemory() *gomock.Call {
+// DeployedInMemory indicates an expected call of DeployedInMemory.
+func (mr *MockMachineMockRecorder) DeployedInMemory() *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeployedAtMemory", reflect.TypeOf((*MockMachine)(nil).DeployedAtMemory))
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeployedInMemory", reflect.TypeOf((*MockMachine)(nil).DeployedInMemory))
 }
 
 // Deployer mocks base method.
